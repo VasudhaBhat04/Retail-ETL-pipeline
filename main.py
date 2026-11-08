@@ -9,7 +9,7 @@ def run_pipeline():
     fact_sales, dim_store, dim_date, dim_features = transform_data(features_df, sales_df, store_df)
     load_data(fact_sales, dim_store, dim_date, dim_features)
 
-    print('Pipeline completed, Data loaded to postges successcully')
+    print('Pipeline completed, Data loaded to postgres successfully')
 
 if __name__ == '__main__':
     run_pipeline()
