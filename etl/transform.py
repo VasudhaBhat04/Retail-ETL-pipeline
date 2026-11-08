@@ -13,9 +13,9 @@ def transform_data(features_df, sales_df, stores_df):
 
     dim_date['year'] = dim_date['Date'].dt.year
     dim_date['month'] = dim_date['Date'].dt.month
-    dim_date['week'] = dim_date['Date'].dt.isocalander().week.astype(int)
+    dim_date['week'] = dim_date['Date'].dt.isocalendar().week.astype(int)
 
-    dim_feature = features_df.drop_dupicates().reset_index(drop = True)
+    dim_feature = features_df.drop_duplicates().reset_index(drop = True)
 
     fact_sales = sales_df.copy()
 

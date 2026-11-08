@@ -5,7 +5,7 @@ def load_data(fact_sales, dim_store, dim_date, dim_feature):
     db_name = 'retail_project'
     db_host = 'localhost'
     db_port = 5432
-    db_pass = 'your password'
+    db_pass = 'yourpassword'
     db_user = 'postgres'
 
     engine = create_engine(f'postgresql://{db_user}:{db_pass}@{db_host}:{db_port}/{db_name}')
